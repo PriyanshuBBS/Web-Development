@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+
+<style>
+    .container{
+        /* Creating Grid */
+        display: grid;
+
+        /* Allot 3 columns with specific column width */
+        /* grid-template-columns: 300px 100px 100px; */
+
+        /* Allot 300 px for 1st and 100 px for last and auto adjust others */
+        /* grid-template-columns: 300px auto 100px; */
+        
+        /* allot fractions of the total width */
+        /* grid-template-columns: 1fr 4fr 1 fr; */
+        
+        /* repeat 10 times auto width */
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 2rem;
+    }
+
+    .item{
+        background-color: red;
+        border: 2px solid black;
+        padding: 15px 5px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+    </div>
+</body>
+</html>

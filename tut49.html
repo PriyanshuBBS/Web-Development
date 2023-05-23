@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <div id="content">
+
+        </div>
+    
+</body>
+
+<script>
+    var string = 'this';
+    // Where to use ' and ", both are valid, if want to add ' in string then use " "
+    var name = "Harry"
+    var channel1 = 'Harry"s channel'
+
+    var temp = `${name} is a 'nice' person "and" he has a channel named ${channel1}`;
+
+    console.log(temp);
+    // String concatenate
+    console.log(string+name+channel1);
+    // Length of string
+    console.log(temp.length)
+    // Dyanmic creation
+    var y = new String("This");
+    console.log(y);
+
+    // adding data to html
+    document.getElementById('content').innerHTML = '<h3> This is added by JavaScript</h3>'
+</script>
+</html>

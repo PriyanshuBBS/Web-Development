@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+
+        .box {
+            display: inline-block;
+            border: 2px solid darkblue;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box3 {
+            /* CSS Position: static (default), relative, absolute, fixed, sticky */
+            /* They decide what happens when move obj */
+
+            /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+            /* position: relative; */
+
+            /* absolute: Positions the element relative to the positon of its first parent*/
+            /* position: absolute; */
+
+            /* top: 34px;
+             left: 134px; */
+
+            /* Both the below position are for when scrolling is done */
+            /* fixed: Positions the element relative to the browser window;ion &&& It get stuck at the posit */
+            /* position: fixed;
+            right: 4px;
+            bottom: 2px */
+
+            /* sticky: Positions the element relative to the users scroll position */
+            position: sticky;
+            top: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Chatting</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

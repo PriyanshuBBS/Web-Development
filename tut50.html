@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+
+<body>
+    <script>
+        var str = 'This is a string';
+        console.log(str);
+
+        // First Occurence of Substring
+        console.log(str.indexOf('is'));
+
+        // Last Occurence of Substring
+        console.log(str.lastIndexOf('is'));
+
+        // Slicing the string: It can take -ve values
+        console.log(str.slice(1, 7));
+
+        // Substring 
+        console.log(str.substring(1, 7));
+
+        // Replace
+        console.log(str.replace('string', 'Priyanshu'))
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // Trimming spaces : only before and after
+        var strWithWhitespaces = "   this contains        whitespaces   ";
+        console.log(strWithWhitespaces.trim())
+
+        // Char at
+        console.log(str.charAt(2));
+        // This returns the numeric value of alphabet
+        console.log(str.charCodeAt(2));
+    </script>
+</body>
+
+</html>

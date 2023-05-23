@@ -1,0 +1,65 @@
+//- Pug is smart html
+doctype html 
+html 
+    head 
+        title Priyanshu Dance Acadmey
+        style 
+            include ../static/style.css
+    body 
+        //- nav#navabar.top 
+            | this
+        nav#navbar 
+            ul  
+                div#logo
+                    img(src="/static/img/logo.png")
+                    | HDA
+                //- href = / : means refer to home
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+        
+        section#introSection 
+            div Welcome to Priyanshu Acadmey 
+            div Eat Sleep Dance Repeat
+        
+        section#SponsorSection 
+            | Our Sponsors
+            div#Sponsors 
+                img(src="/static/img/adobe.png", alt="Adobe",class="spImage")
+                img(src="/static/img/apple.png", alt="Apple",class="spImage")
+                img(src="/static/img/amazon.png", alt="Amazon",class="spImage")
+                img(src="/static/img/microsoft.png", alt="Microsoft",class="spImage")
+        section#OurMission 
+            h2 Our Missions 
+            div.card
+                h3 This is a para 
+                div.card-box
+                    div.card-img 
+                        img(src="/static/img/move.png", alt="")
+                    
+                    div.card-content
+                        p This is the best dance acadmey
+            div.card
+                h3 This is a para 
+                div.card-box
+                    div.card-img 
+                        img(src="/static/img/move.png", alt="")
+                    
+                    div.card-content
+                        p This is the best dance acadmey
+            div.card
+                h3 This is a para 
+                div.card-box
+                    div.card-img 
+                        img(src="/static/img/move.png", alt="")
+                    
+                    div.card-content
+                        p This is the best dance acadmey  
+
+        footer#footer 
+            | Copyright 2023 Priyanshu Ji | All rights reserved
+        
+        script 
+            include ../static/index.js  

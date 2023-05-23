@@ -1,0 +1,20 @@
+{
+  "name": "tut60",
+  "version": "1.0.0",
+  "description": "Priyanshu's NPM",
+  "main": "tut63.js",
+  "scripts": {
+    "test": "Hello Mr. DJ"
+  },
+  "repository": {
+    "type": "git",
+    "url": "GI Hub"
+  },
+  "author": "Priyanshu Dhal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "slugify": "^1.3.5"
+  }
+}

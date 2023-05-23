@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events JS</title>
+</head>
+
+<style>
+    #btn {
+        padding: 10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, inventore.</p>
+    </div>
+
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+
+
+    <script>
+        let para = document.getElementById('para');
+        
+        // Creating alerts for movein/out when mouse inside a section or not
+
+        para.addEventListener('mouseover', function run() {
+            console.log('Mouse is inside text') // here alert can be created alternatevly
+        });
+
+        para.addEventListener('mouseout', function run() {
+            console.log('Mouse now went outside')
+        });
+
+
+        // show/hide button working
+
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            // if it is hidden
+            // Now in modern era, para variable defined at 49 is not needed
+            // it can be acssed directly too, but to define is good practice
+            if (para.style.display != 'none') 
+            {
+                para.style.display = 'none'
+            }
+            else{
+                para.style.display = ' block';
+            }
+
+        }
+    </script>
+</body>
+
+</html>

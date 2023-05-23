@@ -1,0 +1,28 @@
+doctype html 
+html
+  head
+    title Priyanshu Dance Acadmey
+    //- here if scripts is needed to add
+    block style 
+    block scripts
+     
+  body
+    //- when navbar is added to base, it will too work in /contact
+    nav#navbar 
+        ul  
+            div#logo
+                img(src="/static/img/logo.png")
+                | HDA
+                //- href = / : means refer to home
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            //- below: when click on contact contact website will be opened
+            li #[a(href="/contact") Contact Us]
+    //- if content is needed to add
+    block content
+    //- for footer
+    block foot
+    footer#footer 
+            | Copyright 2023 Priyanshu Ji | All rights reserved

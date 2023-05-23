@@ -1,0 +1,149 @@
+/* @import url();  -> for importing the font url*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img{
+    height: 100px;
+    padding: 0 14px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+.card-content{
+    padding: 0px 10px;
+}
+
+.card-content p{
+    font-size: 25px;
+}
+#logo{
+    display: flex;
+    color: white;
+    /* Vertically centre */
+    align-items: center; 
+    margin: 0 14px;
+}
+
+
+#logo img{
+    height: 50px;
+    margin: 5px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    
+}#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 17px 33px;
+    margin-left: -4px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#introSection{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'ZCOOL QingKe HuangYou';
+    font-size: 40px;
+    align-items: center;
+    background: center/cover no-repeat url("/static/bg.jpg") ;
+    height: 425px;
+    background-color: red;
+}
+
+#introSection div.small{
+    font-size: 52px;
+    padding: 5px;
+}
+#SponsorSection{
+    height: 300px;
+    background-color: #fbd6d6c7;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#Sponsors{
+    height: 131px;
+    max-width: 1000px;
+    margin: 37px auto;
+}
+.spImage{
+    height: 80%;
+    margin: 20px;
+}
+#OurMission{
+    margin: auto;
+    width: 90%;
+    height: 300px;
+    display: block;
+}
+#OurMission h2{
+    height: 53px;
+    text-align: center;
+    padding: 12px;
+}
+
+.card{
+    /* So that boxes come in single row */
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 29%;
+    margin: 23px 22px;
+    height: 200px;
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+}
+#footer{
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: black;
+    height: 36px;
+    align-items: center;
+}
