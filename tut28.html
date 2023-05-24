@@ -56,7 +56,7 @@
         #item-1 {
             /* Flex properties for a flex item */
             /* Higher the order, later it shows up in the container */
-            /* order: 2; */
+            order: 2;
 
             /* flex-grow: 2;
             flex-shrink: 2; */
@@ -64,6 +64,7 @@
         }
 
         #item-2 {
+            /* item will grow/shrink relative to the rest of the flexible items */
             /* flex-grow: 3;
             flex-shrink: 3 ; */
             flex-basis: 160px;
@@ -73,9 +74,9 @@
 
         #item-3 {
             /* flex: 2 2 230px; */
-            align-self: flex-start;
+            /* align-self: flex-start; */
             align-self: flex-end;
-            align-self: center;
+            /* align-self: center; */
 
         }
     </style>
