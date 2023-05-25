@@ -13,3 +13,7 @@
 // dev dependencies : only for development purposes, not for production purposes
 
 // npm intall nodemon --save-dev : to install dev dependencies
+
+// nodemon - a package which remove the requinment of server restart after every changes
+
+// npm packages are only installed within the current working directory

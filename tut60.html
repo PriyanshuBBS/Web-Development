@@ -33,7 +33,7 @@
             names: ["Harry","Rohan","Skill"],
 
             speak(){
-                this.names.forEach((student)=> // If this is a normal fn, then "this" won't work
+                this.names.forEach((student)=> // If this is a normal fn, then "this" won't work,as arrow allows ext. this access
                 {
                     console.log(this.greeting + "Kukdoo Koo" + student)
                 });

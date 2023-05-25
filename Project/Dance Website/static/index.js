@@ -1,0 +1,1 @@
+// This will be used when pug will not be used

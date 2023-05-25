@@ -1,25 +1,12 @@
+// Node.Js is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
+
 // Creating a server, run in terminal and then go the link which is provided there
+// Run just like you run cpp codes
 
-// const http = require('http');
-
-// const hostname = '127.0.0.1';
-// const port = 3000;
-
-// const server = http.createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('Hello World');
-// });
-
-// server.listen(port, hostname, () => {
-//   console.log(`Server running at http://${hostname}:${port}/`);
-// });
-
-//  *** Below code will run the html code with help of NodeJs
+//  *** Below code will run the html code with help of NodeJs ***
 const http = require('http');
-
 const hostname = '127.0.0.1';
-// generally we set port as 80 or 8000
+// generally we set port as 80 so that just have to write localhost
 const port = 3000;
 
 // res: response and req : request  
@@ -87,3 +74,7 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
+// How to run the code :
+// type node <filename> in terminal or use ctrl+alt+N

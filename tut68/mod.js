@@ -7,12 +7,12 @@ function average(arr){
     });
     return sum/arr.length; // Average value of array
 }
-
-// module.exports = average;
+// exporting the module when have only average
+module.exports = average;
 
 // Now we have to import as mod
-module.exports = {
-    avg: average,
-    name: "Priyanshu",
-    repo: "GitHub"
-}
+// module.exports = {
+//     avg: average,
+//     name: "Priyanshu",
+//     repo: "GitHub"
+// }

@@ -26,6 +26,7 @@ app.post('/', (req, res)=>{
     // body is a object and it is used to store data
 
     // these name,age, gender are from html's form code
+    // The dats will be stored in a file
     name = req.body.name
     age = req.body.age
     gender = req.body.gender
@@ -35,7 +36,7 @@ app.post('/', (req, res)=>{
     let outputToWrite = `the name of the client is ${name}, ${age} years old, ${gender}, residing at ${address}. More about him/her: ${more}`
     fs.writeFileSync('output.txt', outputToWrite)
 
-    // from get method
+    // from get submitted method
     const params = {'message': 'Your form has been submitted successfully'}
     res.status(200).render('index.pug', params);
 

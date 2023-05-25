@@ -18,9 +18,6 @@ const ContactSchema = new mongoose.Schema({
   });
 const Contact = mongoose.model('Contact', ContactSchema);
 
-// 1. npm init and form
-// views contain all the templates
-
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
 app.use(express.urlencoded())
@@ -32,7 +29,7 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 // ENDPOINTS
 app.get('/', (req, res)=>{
     const params = {}
-    // changed to home.pug for last tut illustration otherwise it is index.pug
+    // changed to home.pug for base-fill otherwise it is index.pug
     res.status(200).render('home.pug', params);
 })
 

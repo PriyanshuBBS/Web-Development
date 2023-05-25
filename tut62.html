@@ -7,7 +7,7 @@
     <title>Json Tutorial</title>
 </head>
 
-<!-- JSON stands for JavaScript Object Notation,data-interchange format -->
+<!-- JSON stands for JavaScript Object Notation, a data-interchange format -->
 <body>
     <div class="container">This is my container</div>
     <script>
@@ -18,10 +18,12 @@
             friend: "Rohan Das",
             food: "Bhindi" //#bhindiLoverSquad
         }
+        console.log("Printing as object")
         console.log(jsonObj);
 
         // Stringify Object : changing object data to string
         let myJsonStr = JSON.stringify(jsonObj);
+        console.log("Printing as string")
         console.log(myJsonStr);
 
         myJsonStr = myJsonStr.replace('Harry', 'Larry');
@@ -29,6 +31,7 @@
 
         // Reverting the stringified object to Normal Object
         newJsonObj = JSON.parse(myJsonStr);
+        console.log("Reverting back to object")
         console.log(newJsonObj)
 
     </script>

@@ -14,5 +14,8 @@ console.log("The content of the file is")
 console.log(texts);
 
 console.log("Creating a new file...")
+
 // Syncronus Writing to the file
 fs.writeFileSync("rohan.txt", texts);
+
+// How to run : Run in terminal
