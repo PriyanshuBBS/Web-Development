@@ -1,0 +1,85 @@
+/* Resseting CSS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+
+body
+{
+    background: url(Puri.jpg) no-repeat center center fixed;
+    /* cover means cover all the page */
+    background-size: cover;
+}
+
+.container{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 14%;
+    left:8%;
+}
+
+.container h1{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    border-bottom: 4px solid black;
+    color: black;
+    margin-left: 2px;
+    margin-bottom: 34px;
+    /* padding: 3px; */
+    padding-bottom: 1px;
+    font-size: 35px;
+}
+
+.box
+{
+    /* border: 2px solid purple; */
+    border-bottom: 2px solid black;
+    margin-bottom: 19px;
+    padding-bottom: 2px;
+}
+.box i{
+    /* margin-left: 12px; */
+    color: grey;
+}
+.box input
+{
+
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 2px;
+    padding: 2px;
+    margin-left: 4px;
+    /* width: 65%; */
+    /* When click outline not comes */
+    outline: none;
+    color: black;
+    /* font-style: italic; */
+    font-weight:bold;
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+}
+
+.btn
+{
+    background:none;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    width: 31%;
+    padding: 5px;
+    margin-left: 74px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn:hover
+{
+    opacity:0.5;
+    background: none;
+    color: white;
+    background-color: black;
+}

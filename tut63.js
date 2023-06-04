@@ -7,13 +7,13 @@
 const http = require('http');
 const hostname = '127.0.0.1';
 // generally we set port as 80 so that just have to write localhost
-const port = 3000;
+const port = 80;
 
 // res: response and req : request  
 const server = http.createServer((req, res) => {
-    res.statusCode = 200;
+    res.statusCode = 200; 
     //   ---> here by default is text/plain : will print the html text so change to html to run html
-    res.setHeader('Content-Type', 'text/html');
+    res.setHeader('Content-Type', 'text/plain');
     res.end(`<!DOCTYPE html>
   <html lang="en">
   <head>
